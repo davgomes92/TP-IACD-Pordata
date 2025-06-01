@@ -1,12 +1,12 @@
 # TP_IACD_Pordata
 
-O trabalho tem o objetivo relacionar dados municípais recolhidos no site `https://www.pordata.pt/pt/estatisticas` 
+O trabalho tem o objetivo de relacionar dados recolhidos do site `https://www.pordata.pt/pt/estatisticas` 
 estudá-los e tirar conclusões a partir dos mesmos.
 
 ## Como usar
 
-O código está generalizado para funcionar com qualquer link do site da Pordata com estatísticas de municípios, o utilizador deverá inserir 
-os links que pretende analisar e o programa irá fazer o processo de recolha, integração, análise exploratória, limpeza e preprocessamento e análise descritiva dos dados.
+Como o código está generalizado para funcionar com qualquer link do site da Pordata, o utlizador tem de inserir 
+os links que pretende analisar e o programa irá fazer os diferentes gráficos para que possa tirar conclusões.
 
 ### Links como exemplo:
 
@@ -15,3 +15,21 @@ https://www.pordata.pt/pt/estatisticas/empresas/caracterizacao-e-demografia/empr
 https://www.pordata.pt/pt/estatisticas/salarios-e-pensoes/salarios/ganho-medio-mensal
 
 https://www.pordata.pt/pt/estatisticas/emprego/populacao-desempregada/desemprego-registado-nos-centros-de-emprego-por-tempo
+
+## Como executar a partir do terminal
+
+### 1. Clonar o repositório se ainda não o fez
+
+```git clone https://github.com/davgomes92/TP-IACD-Pordata.git```
+
+### 2. Mudar de diretório
+
+```cd IACD_Prog_20242025_Grupo4```
+
+### 3. Instalar as dependências
+
+```pip install -r requirements.txt```
+
+### 4. Executar o script
+
+```python ficheiro_execucao.py```
