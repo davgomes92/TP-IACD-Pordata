@@ -258,7 +258,7 @@ if __name__ == "__main__":
             nome = link.strip('/').split('/')[-1].replace('-', '_')
             try:
                 recolha_dados(nome, link, pasta_downloads)
-                    print(f"Processo completo para o link {i + 1}")
+                print(f"Processo completo para o link {i + 1}")
             except Exception as e:
                 print(f"Falha ao processar o link {i + 1}: {str(e)}")
     else:

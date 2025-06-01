@@ -269,7 +269,7 @@ def mapear_municipio_para_regiao(municipio):
     return "Região Desconhecida"
 
 #Adiciona uma coluna de Regiao ao dataset para permitir analises por regiao
-    def adicionar_coluna_regiao(dados_df):
+def adicionar_coluna_regiao(dados_df):
     if 'Regiao' not in dados_df.columns:
         dados_df['Regiao'] = dados_df['Municipio'].apply(mapear_municipio_para_regiao)
     return dados_df
