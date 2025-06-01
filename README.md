@@ -5,7 +5,7 @@ estudá-los e tirar conclusões a partir dos mesmos.
 
 ## Como usar
 
-O código está generalizado para funcionar com qualquer link do site da Pordata com estatísticas de municípios, o utlizador deverá inserir 
+O código está generalizado para funcionar com qualquer link do site da Pordata com estatísticas de municípios, o utilizador deverá inserir 
 os links que pretende analisar e o programa irá fazer o processo de recolha, integração, análise exploratória, limpeza e preprocessamento e análise descritiva dos dados.
 
 ### Links como exemplo:
