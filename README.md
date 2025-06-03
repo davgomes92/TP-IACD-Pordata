@@ -1,35 +1,77 @@
 # TP_IACD_Pordata
 
-O trabalho tem o objetivo de relacionar dados recolhidos do site `https://www.pordata.pt/pt/estatisticas` 
-estudá-los e tirar conclusões a partir dos mesmos.
+Este projeto tem como objetivo recolher, analisar e visualizar dados estatísticos do site [PORDATA](https://www.pordata.pt/pt/estatisticas). A partir dos dados obtidos, o utilizador poderá gerar gráficos que facilitam a interpretação e análise de tendências.
 
-## Como usar
+## Funcionalidade
 
-Como o código está generalizado para funcionar com qualquer link do site da Pordata, o utlizador tem de inserir 
-os links que pretende analisar e o programa irá fazer os diferentes gráficos para que possa tirar conclusões.
+O programa permite:
 
-### Links como exemplo:
+- Inserir **links da PORDATA** correspondentes a temas estatísticos de interesse;
+- Extrair e processar os dados dessas páginas;
+- Gerar automaticamente **gráficos** para análise visual dos dados.
 
-https://www.pordata.pt/pt/estatisticas/empresas/caracterizacao-e-demografia/empresas-por-dimensao
+## Exemplos de links suportados
 
-https://www.pordata.pt/pt/estatisticas/salarios-e-pensoes/salarios/ganho-medio-mensal
+Aqui estão alguns exemplos de páginas da PORDATA compatíveis com o programa:
 
-https://www.pordata.pt/pt/estatisticas/emprego/populacao-desempregada/desemprego-registado-nos-centros-de-emprego-por-tempo
+- [Empresas por dimensão](https://www.pordata.pt/pt/estatisticas/empresas/caracterizacao-e-demografia/empresas-por-dimensao)
+- [Ganho médio mensal](https://www.pordata.pt/pt/estatisticas/salarios-e-pensoes/salarios/ganho-medio-mensal)
+- [Desemprego registado por tempo](https://www.pordata.pt/pt/estatisticas/emprego/populacao-desempregada/desemprego-registado-nos-centros-de-emprego-por-tempo)
 
-## Como executar a partir do terminal
+---
 
-### 1. Clonar o repositório se ainda não o fez
+## Como executar
 
-```git clone https://github.com/davgomes92/TP-IACD-Pordata.git```
+### 1. Clonar o repositório
 
-### 2. Mudar de diretório
+```bash
+git clone https://github.com/davgomes92/TP-IACD-Pordata.git
+```
 
-```cd IACD_Prog_20242025_Grupo4```
+### 2. Mudar para o diretório do projeto
+
+```bash
+cd TP-IACD-Pordata
+```
+```markdown
+> Nota: O diretório criado será, por padrão, `TP-IACD-Pordata`, a menos que tenha especificado outro nome ao clonar.
+```
 
 ### 3. Instalar as dependências
 
-```pip install -r requirements.txt```
+Recomenda-se o uso de um ambiente virtual:
 
-### 4. Executar o script
+```bash
+python -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-```python ficheiro_execucao.py```
+### 4. Executar o script principal
+
+```bash
+python ficheiro_execucao.py
+```
+
+> O programa irá solicitar os links da PORDATA que pretende analisar.
+
+
+## Estrutura do Projeto
+
+```
+TP-IACD-Pordata/
+├── ficheiro_execucao.py
+├── requirements.txt
+├── /src
+│   └── ... (módulos auxiliares)
+└── README.md
+```
+
+## Requisitos
+
+- Python 3.7 ou superior
+- Ligação à internet (para recolha dos dados da PORDATA)
+
+## Contacto
+
+Para dúvidas ou sugestões, por favor contacte [@davgomes92](https://github.com/davgomes92) através do GitHub.
